@@ -15,8 +15,8 @@ class Question extends Model
     /**
      * @return HasMany
      */
-    public function Answer(): HasMany
+    public function Answers(): HasMany
     {
-        return $this->hasMany(Answer::class, 'question_id', 'id');
+        return $this->hasMany(Answer::class, 'question_id', 'id')->select('id', 'question_id', 'answer');
     }
 }
