@@ -14,7 +14,7 @@ class AdminServices
      */
     public function fetchQuestionWithAnswers(): Collection|array
     {
-        return Question::with('Answers')->get();
+        return Question::with('AnswersVisible')->get();
     }
 
     public function addQuestion($requestData)

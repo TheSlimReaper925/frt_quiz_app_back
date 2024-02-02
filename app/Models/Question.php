@@ -19,4 +19,9 @@ class Question extends Model
     {
         return $this->hasMany(Answer::class, 'question_id', 'id')->select('id', 'question_id', 'answer');
     }
+
+    public function AnswersVisible(): HasMany
+    {
+        return $this->hasMany(Answer::class, 'question_id', 'id')->select('id', 'question_id', 'answer', 'is_correct');
+    }
 }
