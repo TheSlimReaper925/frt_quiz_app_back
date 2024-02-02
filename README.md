@@ -31,7 +31,6 @@
    - Import the provided `.sql` file located in the project.
    
      ```bash
-     # Example using MySQL command-line
      mysql -u root -p frt_quiz < path/to/quiz_data.sql
      ```
 
