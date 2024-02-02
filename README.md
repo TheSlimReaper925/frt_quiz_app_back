@@ -30,7 +30,7 @@
    FRONTEND_URL=http://localhost:4200
 
 7. Create a table and import the .sql file:
-   # Example using MySQL command-line
+    Example using MySQL command-line
     mysql -u root -p frt_quiz < path/to/quiz_data.sql
 
 ## Front-End
